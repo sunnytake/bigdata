@@ -1,4 +1,4 @@
-package com.msb.bigdata
+package com.msb.bigdata.scala
 
 object ScalaLesson02 {
     // 方法与函数

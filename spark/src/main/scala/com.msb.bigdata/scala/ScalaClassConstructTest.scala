@@ -1,4 +1,4 @@
-package com.msb.bigdata
+package com.msb.bigdata.scala
 
 //class ScalaClassConstructTest {
 //

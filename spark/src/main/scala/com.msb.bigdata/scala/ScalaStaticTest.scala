@@ -1,4 +1,4 @@
-package com.msb.bigdata
+package com.msb.bigdata.scala
 
 /*
 scala中：可以在object/class体中写代码，优先于main方法中代码执行。

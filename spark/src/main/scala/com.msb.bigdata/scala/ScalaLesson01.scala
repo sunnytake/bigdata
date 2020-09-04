@@ -1,5 +1,4 @@
-package com.msb.bigdata
-
+package com.msb.bigdata.scala
 import scala.collection.immutable
 
 object ScalaLesson01 {

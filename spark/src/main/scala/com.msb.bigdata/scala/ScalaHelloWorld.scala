@@ -1,4 +1,4 @@
-package com.msb.bigdata
+package com.msb.bigdata.scala
 
 /*
 java中：有一个知识点：静态。实现了实例化类对象时，类中非静态的部分可以个性化，而静态的部分可以归一化。
