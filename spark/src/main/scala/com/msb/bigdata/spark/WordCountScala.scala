@@ -13,7 +13,13 @@ object WordCountScala {
         val words: RDD[String] = fileRDD.flatMap((x:String) => {x.split(" ")})
         val pairWord: RDD[(String, Int)] = words.map((x:String) => {new Tuple2(x,1)})
         val res: RDD[(String, Int)] = pairWord.reduceByKey((x: Int, y: Int) => {x+y})
+        
+    
+        val fanzhuan: RDD[(Int, Int)] = res.map((x: (String, Int)) => {(x._2, 1)})
+        val resOver: RDD[(Int, Int)] = fanzhuan.reduceByKey(_+_)
+        resOver.foreach(println)
         res.foreach(println)
+        
         
         // 精简
         fileRDD.flatMap(_.split(" ")).map((_,1)).reduceByKey(_+_).foreach(println)
